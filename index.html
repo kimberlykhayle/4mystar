@@ -3,19 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Second Monthsary, My Love</title>
 
-<title>Happy 21st Monthsary, Rez</title>
-
+<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=EB+Garamond&display=swap" rel="stylesheet">
 
 <style>
-
 body {
     margin: 0;
     font-family: 'EB Garamond', serif;
     background: radial-gradient(circle at bottom, #0f2027, #203a43, #000);
     color: white;
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .stars {
@@ -37,37 +41,32 @@ body {
 }
 
 @keyframes floatStars {
-    from {
-        transform: translateY(100vh);
-        opacity: 0;
-    }
+    from { transform: translateY(100vh); opacity: 0; }
     20% { opacity: 1; }
-    to {
-        transform: translateY(-10vh);
-        opacity: 0;
-    }
+    to { transform: translateY(-10vh); opacity: 0; }
 }
 
 .container {
-    max-width: 750px;
-    margin: 80px auto;
-    padding: 40px;
+    max-width: 700px;
     background: rgba(255,255,255,0.08);
     border-radius: 20px;
     backdrop-filter: blur(12px);
     box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    padding: 40px;
     animation: fadeIn 2s ease;
+    text-align: left;
 }
 
 h1 {
     text-align: center;
     font-weight: normal;
-    letter-spacing: 1px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 20px;
 }
 
 p {
-    line-height: 1.9;
-    font-size: 19px;
+    line-height: 1.8;
+    font-size: 18px;
     white-space: pre-line;
 }
 
@@ -77,49 +76,66 @@ p {
     font-style: italic;
 }
 
+.play-btn {
+    display: block;
+    margin: 0 auto 25px auto;
+    padding: 12px 28px;
+    border: 2px solid #ffb347;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff8e7;
+    font-size: 18px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 179, 71, 0.5);
+}
+
+.play-btn:hover {
+    background: rgba(255, 179, 71, 0.2);
+    box-shadow: 0 0 25px rgba(255, 179, 71, 0.7);
+    transform: scale(1.05);
+}
+
 @keyframes fadeIn {
     from {opacity: 0; transform: translateY(20px);}
     to {opacity: 1; transform: translateY(0);}
 }
-
 </style>
 </head>
-
 <body>
-    
+
 <div class="stars" id="stars"></div>
-<audio id="myAudio" preload="auto">
-            <source src="sleeptonight.mp3" type="audio/mpeg">
-</audio>
-    
+
 <div class="container">
-<h1>Happy 21st Month of Friendship, Rez</h1>
+    <button id="playAudioButton" class="play-btn">🎵 Play Music</button>
 
-<p>
-happy 21st month of friendship, rez :))
+    <audio id="myAudio" loop>
+        <source src="sleeptonight.mp3">
+        Your browser does not support the audio element.
+    </audio>
 
-i realized lately that i kinda stopped writing letters for our monthsaries, and i'm really sorry about that. it used to be something so special for us. i miss that tradition, and i want to bring it back. because you, and what we have, deserve to be celebrated consistently, not only when things feel easy, but especially when we're learning how to find each other again.
+    <h1>Happy Second Monthsary, My Love!</h1>
 
-we've really come such a long way, haven't we? from me being too shy and nervous to even turn on my mic while we played roblox together, to nights where calling you became part of my routine. somewhere between the beginning of our friendship and now, we both changed. we grew individually, and our relationship grew too. and honestly, looking back at it all feels a little bittersweet. not because things became worse, but because growth sometimes means learning each other all over again.
+    <p>
+        i know we’ve been missing each other a lot lately because we both have a lot on our plate, but either way, i appreciate you for still doing your best to talk to me. this website is purely html XD obviously, i’m not knowledgeable yet about advanced coding languages, but yeah, anyway, i’ll also use this website to share my appreciation message for you, just added some extra steps as well hehe. the process was actually fun. 
+    </p>
 
-first of all, i want to say i'm sorry. truly. i know i can be hard to understand sometimes, madalas, actually. and there were moments when instead of meeting you halfway, i let distance or misunderstandings sit between us. i never wanted us to lose that promise we once made — to always be lovers and friends at the same time. i think somewhere along the way, we forgot how to listen to each other the way we used to. but i want to understand you again. out of all the people in this vast, overwhelming universe, you are the one i want to understand the most, soulmate kita eh. i hope you'll give me a chance to make it up to you, rez. let's find our way back to each other.
+    <p>
+        happy second month to forever, rez. it still feels surreal that we’re together, that i get to call you, my soulmate, mine. no matter how much time passes, even when we are already celebrating our 50th anniversary, i don’t think i’ll ever fully grasp the depth of what we have.
+    </p>
 
-ad astra per aspera — through hardships, to the stars. maybe that's what this phase is for us. not the end of something beautiful, but proof that what we have is strong enough to go through difficult moments and still find its way back to light. 
+    <p>…(you can paste the rest of your letter here)…</p>
 
-and if you ever look at the stars tonight, i hope you remember this: somewhere under the same sky, there's someone who still looks at them and thinks of you. someone who believes that meeting you was never an accident, but a miracle written in the universe.
-
-happy 21st monthsary of friendship, my star.
-</p>
-
-<div class="signature">
-— sincerely yours 💫
-</div>
-
+    <div class="signature">
+        — Sincerely yours, Kayce 💫
+    </div>
 </div>
 
 <script>
+// Floating stars
 const starsContainer = document.getElementById("stars");
-
 for (let i = 0; i < 80; i++) {
     let star = document.createElement("div");
     star.className = "star";
@@ -128,6 +144,17 @@ for (let i = 0; i < 80; i++) {
     star.style.animationDelay = Math.random() * 10 + "s";
     starsContainer.appendChild(star);
 }
+
+// Play music button
+document.addEventListener('DOMContentLoaded', function() {
+    const audio = document.querySelector("#myAudio");
+    const playBtn = document.querySelector("#playAudioButton");
+
+    playBtn.addEventListener("click", () => {
+        audio.play();
+        playBtn.style.display = "none"; // hide button after click
+    });
+});
 </script>
 
 </body>
