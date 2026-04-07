@@ -91,7 +91,6 @@ p {
 
 !-- Background Music -->
 <audio autoplay loop>
-  <!-- Replace music.mp3 with your file name -->
   <source src="December Avenue - Sleep Tonight.mp3" type="audio/mpeg">
 </audio>
 
@@ -118,7 +117,7 @@ happy 21st monthsary of friendship, my star.
 </p>
 
 <div class="signature">
-— always yours 💫
+— sincerely yours 💫
 </div>
 
 </div>
