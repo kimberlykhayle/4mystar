@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Second Monthsary, My Love</title>
+<title>Happy 21st Month of Friendship, Rez!</title>
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=EB+Garamond&display=swap" rel="stylesheet">
@@ -105,8 +105,17 @@ p {
 </style>
 </head>
 <body>
-     
 <div class="stars" id="stars"></div>
+
+<div class="container">
+
+    <!-- Play Music Button -->
+    <button id="playAudioButton" class="play-btn">🎵 Play Music</button>
+
+    <audio id="myAudio" loop>
+        <source src="December Avenue - Sleep Tonight.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 
     <h1>Happy 21st Month of Friendship, Rez!</h1>
 
@@ -122,14 +131,36 @@ ad astra per aspera — through hardships, to the stars. maybe that's what this 
 and if you ever look at the stars tonight, i hope you remember this: somewhere under the same sky, there's someone who still looks at them and thinks of you. someone who believes that meeting you was never an accident, but a miracle written in the universe.
 
 happy 21st monthsary of friendship, my star.
-</p>
+    </p>
 
-<div class="signature">
-— always yours 💫
+    <div class="signature">
+        — sincerely yours 
+    </div>
+
 </div>
 
-</div>
+<script>
+// Floating stars
+const starsContainer = document.getElementById("stars");
+for (let i = 0; i < 80; i++) {
+    let star = document.createElement("div");
+    star.className = "star";
+    star.style.left = Math.random() * 100 + "vw";
+    star.style.animationDuration = (5 + Math.random() * 10) + "s";
+    star.style.animationDelay = Math.random() * 10 + "s";
+    starsContainer.appendChild(star);
+}
 
+// Play music button
+document.addEventListener('DOMContentLoaded', function() {
+    const audio = document.querySelector("#myAudio");
+    const playBtn = document.querySelector("#playAudioButton");
+
+    playBtn.addEventListener("click", () => {
+        audio.play();
+        playBtn.style.display = "none"; // hide button after click
+    });
+});
+</script>
 </body>
 </html>
-    </p>
