@@ -6,8 +6,7 @@
 
 <title>Happy 21st Monthsary ⭐</title>
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=EB+Garamond&display=swap" rel="stylesheet">
 
 <style>
 
@@ -19,7 +18,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Floating stars */
 .stars {
     position: fixed;
     width: 100%;
@@ -89,12 +87,10 @@ p {
 
 <body>
 
-<!-- Background Music -->
 <audio autoplay loop>
   <source src="December Avenue - Sleep Tonight.mp3" type="audio/mpeg">
 </audio>
 
-<!-- Stars -->
 <div class="stars" id="stars"></div>
 
 <div class="container">
@@ -123,7 +119,6 @@ happy 21st monthsary of friendship, my star.
 </div>
 
 <script>
-/* Generate floating stars */
 const starsContainer = document.getElementById("stars");
 
 for (let i = 0; i < 80; i++) {
