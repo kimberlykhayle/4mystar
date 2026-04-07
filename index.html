@@ -105,22 +105,31 @@ p {
 </style>
 </head>
 <body>
+    
+<button id="playAudioButton">Play Music</button>
 
+<audio id="myAudio" loop>
+  <source src="sleeptonight.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const audio = document.querySelector("#myAudio");
+const playBtn = document.querySelector("#playAudioButton");
+
+playBtn.addEventListener("click", () => {
+    audio.play().catch(e => {
+        console.log("Audio play failed:", e);
+        alert("Audio could not play. Try using a different file or browser.");
+    });
+    playBtn.style.display = "none";
+});
+</script>
+    
 <div class="stars" id="stars"></div>
-
-<div class="container">
-    <button id="playAudioButton" class="play-btn">🎵 Play Music</button>
-
-    <audio id="myAudio" loop>
-        <source src="sleeptonight.mp3">
-        Your browser does not support the audio element.
-    </audio>
 
     <h1>Happy 21st Month of Friendship, Rez!</h1>
 
     <p>
-        happy 21st month of friendship, rez :))
-
 i realized lately that i kinda stopped writing letters for our monthsaries, and i'm really sorry about that. it used to be something so special for us. i miss that tradition, and i want to bring it back. because you, and what we have, deserve to be celebrated consistently, not only when things feel easy, but especially when we're learning how to find each other again.
 
 we've really come such a long way, haven't we? from me being too shy and nervous to even turn on my mic while we played roblox together, to nights where calling you became part of my routine. somewhere between the beginning of our friendship and now, we both changed. we grew individually, and our relationship grew too. and honestly, looking back at it all feels a little bittersweet. not because things became worse, but because growth sometimes means learning each other all over again.
