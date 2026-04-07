@@ -6,25 +6,58 @@
 
 <title>Happy 21st Monthsary ⭐</title>
 
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
 <style>
+
 body {
     margin: 0;
-    font-family: "Georgia", serif;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'EB Garamond', serif;
+    background: radial-gradient(circle at bottom, #0f2027, #203a43, #000);
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Floating stars */
+.stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    animation: floatStars linear infinite;
+    opacity: 0.8;
+}
+
+@keyframes floatStars {
+    from {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    20% { opacity: 1; }
+    to {
+        transform: translateY(-10vh);
+        opacity: 0;
+    }
 }
 
 .container {
     max-width: 750px;
+    margin: 80px auto;
     padding: 40px;
     background: rgba(255,255,255,0.08);
     border-radius: 20px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 40px rgba(0,0,0,0.4);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 40px rgba(0,0,0,0.5);
     animation: fadeIn 2s ease;
 }
 
@@ -35,8 +68,8 @@ h1 {
 }
 
 p {
-    line-height: 1.8;
-    font-size: 18px;
+    line-height: 1.9;
+    font-size: 19px;
     white-space: pre-line;
 }
 
@@ -50,10 +83,20 @@ p {
     from {opacity: 0; transform: translateY(20px);}
     to {opacity: 1; transform: translateY(0);}
 }
+
 </style>
 </head>
 
 <body>
+
+!-- Background Music -->
+<audio autoplay loop>
+  <!-- Replace music.mp3 with your file name -->
+  <source src="December Avenue - Sleep Tonight.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Stars -->
+<div class="stars" id="stars"></div>
 
 <div class="container">
 <h1>Happy 21st Month of Friendship, Rez ⭐</h1>
@@ -79,6 +122,20 @@ happy 21st monthsary of friendship, my star.
 </div>
 
 </div>
+
+<script>
+/* Generate floating stars */
+const starsContainer = document.getElementById("stars");
+
+for (let i = 0; i < 80; i++) {
+    let star = document.createElement("div");
+    star.className = "star";
+    star.style.left = Math.random() * 100 + "vw";
+    star.style.animationDuration = (5 + Math.random() * 10) + "s";
+    star.style.animationDelay = Math.random() * 10 + "s";
+    starsContainer.appendChild(star);
+}
+</script>
 
 </body>
 </html>
