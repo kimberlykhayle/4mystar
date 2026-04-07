@@ -1,1 +1,84 @@
-# 4mystar
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy 21st Monthsary ⭐</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 750px;
+    padding: 40px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px rgba(0,0,0,0.4);
+    animation: fadeIn 2s ease;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 18px;
+    white-space: pre-line;
+}
+
+.signature {
+    margin-top: 30px;
+    text-align: right;
+    font-style: italic;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>Happy 21st Month of Friendship, Rez ⭐</h1>
+
+<p>
+happy 21st month of friendship, rez :))
+
+i realized lately that i kinda stopped writing letters for our monthsaries, and i'm really sorry about that. it used to be something so special for us. i miss that tradition, and i want to bring it back. because you, and what we have, deserve to be celebrated consistently, not only when things feel easy, but especially when we're learning how to find each other again.
+
+we've really come such a long way, haven't we? from me being too shy and nervous to even turn on my mic while we played roblox together, to nights where calling you became part of my routine. somewhere between the beginning of our friendship and now, we both changed. we grew individually, and our relationship grew too. and honestly, looking back at it all feels a little bittersweet. not because things became worse, but because growth sometimes means learning each other all over again.
+
+first of all, i want to say i'm sorry. truly. i know i can be hard to understand sometimes, madalas, actually. and there were moments when instead of meeting you halfway, i let distance or misunderstandings sit between us. i never wanted us to lose that promise we once made — to always be lovers and friends at the same time. i think somewhere along the way, we forgot how to listen to each other the way we used to. but i want to understand you again. out of all the people in this vast, overwhelming universe, you are the one i want to understand the most, soulmate kita eh. i hope you'll give me a chance to make it up to you, rez. let's find our way back to each other.
+
+ad astra per aspera — through hardships, to the stars. maybe that's what this phase is for us. not the end of something beautiful, but proof that what we have is strong enough to go through difficult moments and still find its way back to light. 
+
+and if you ever look at the stars tonight, i hope you remember this: somewhere under the same sky, there's someone who still looks at them and thinks of you. someone who believes that meeting you was never an accident, but a miracle written in the universe.
+
+happy 21st monthsary of friendship, my star.
+</p>
+
+<div class="signature">
+— always yours 💫
+</div>
+
+</div>
+
+</body>
+</html>
